@@ -22,15 +22,29 @@
       </nav>
     </header>
     <main>
-      <h2>Our Sponsors</h2>
-      <a href="https://thefeed.com/" target="_blank"><img src="thefeed.jpg" alt="The Feed" style="width:100px;height:100px;"></a>      </section>
+      <select id="event-type" onchange="updateResults()">
+        <option value="">Select Event Type</option>
+        <option value="little500_race">Little 500 Race</option>
+        <option value="qualifications">Qualifications</option>
+        <option value="team_pursuit">Team Pursuit</option>
+        <option value="individual_time_trials">Individual Time Trials</option>
+      </select>
+
+      <!-- This div will hold the results table -->
+      <div id="results-table"></div>
     </main>
+
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Footer -->
     <footer>
       <p>&copy; 2024 Our Cycling Team. All rights reserved.</p>
       <p>
         Follow us on social media:
         <a href="https://www.instagram.com/forestcycling/">Instagram</a>
       </p>
+      .
     </footer>
   </body>
 </html>
