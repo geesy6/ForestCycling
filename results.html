@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little 500 Results</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="results.html" class="active">Results</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <img src="forest.png" alt="Our Cycling Team Logo" class="logo" />
+      </div>
+    </header>
+    <main>
+      <select id="event-type" onchange="updateResults()">
+        <option value="">Select Event Type</option>
+        <option value="little500_race">Little 500 Race</option>
+        <option value="qualifications">Qualifications</option>
+        <option value="team_pursuit">Team Pursuit</option>
+        <option value="individual_time_trials">Individual Time Trials</option>
+      </select>
+
+      <!-- This div will hold the results table -->
+      <div id="results-table"></div>
+    </main>
+
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Our Cycling Team. All rights reserved.</p>
+      <p>
+        Follow us on social media: <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> | <a href="#">Twitter</a>
+      </p>
+      .
+    </footer>
+  </body>
+</html>
