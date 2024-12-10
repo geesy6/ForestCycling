@@ -1,23 +1,19 @@
-h1 {
-  text-decoration: underline;
-}
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-image: url("images/tree-outline.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: #f4f4f4; /* Fallback color */
+  background-color: #f4f4f4;
 }
 
 header {
-  background-color: #333;
+  background-color: #3b7d34;
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 0rem; /* Reduced padding to make the header shorter */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header nav ul {
@@ -26,6 +22,8 @@ header nav ul {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 header nav ul li {
@@ -37,22 +35,32 @@ header nav a {
   text-decoration: none;
 }
 
-header nav a.active {
-  font-weight: bold;
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem; /* Added margin to separate nav and logo */
+}
+
+.logo {
+  width: 300px; /* Logo size remains the same */
+  height: auto;
+  margin-bottom: 0px; /* Reduced margin to make the header shorter */
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; /* Reduced margin to make the header shorter */
 }
 
 main {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Semi-transparent background to make text readable */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .donate-button {
@@ -64,25 +72,9 @@ main {
   border-radius: 5px;
   font-weight: bold;
 }
-
-.team-members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.member {
-  margin: 20px;
-  text-align: center;
-}
-
-.member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.member-image {
+  width: 100px; /* Adjust the width to make the images smaller */
+  height: 100px; /* Make the images square */
+  border-radius: 50%; /* Make the images circular */
   object-fit: cover;
-}
-
-.member h3 {
-  margin-top: 10px;
 }
